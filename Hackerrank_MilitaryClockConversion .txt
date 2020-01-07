@@ -1,0 +1,17 @@
+i=input()
+if i[8:] == 'PM' and int(i[:2]) <= 11:
+    j = str(int(i[:2]) + 12)
+    j+=i[2:8]
+    print(j)
+elif i[8:] == 'AM' and int(i[:2]) == 12:
+     
+    k = "00" + i[2:8]
+    
+    print(k)
+    
+     
+
+else: print(i[:8])
+
+
+
